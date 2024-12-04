@@ -15,20 +15,11 @@ import watsapp from "assets/images/icons/watsapp.png";
 import logo from "assets/images/icons/logo.png";
 
 const Header = () => {
-  const [anchorEl, setAnchorEl] = React.useState(null);
   const [openDrawer, setOpenDrawer] = React.useState(false);
 
   const toggleDrawer = (newOpen) => () => {
     setOpenDrawer(newOpen);
   };
-
-  const handleClick = (event) => {
-    setAnchorEl(event.currentTarget);
-  };
-
-  const open = Boolean(anchorEl);
-  const id = open ? "menu-popover" : undefined;
-
   return (
     <Box position={"sticky"} top={0} zIndex={1000}>
       <Box bgcolor="common.black">
@@ -77,20 +68,19 @@ const Header = () => {
           </Link>
         </Box>
         <Box display="flex" alignItems="center">
-          <Typography
-            component="span"
-            mr={3.5}
-            onClick={handleClick}
-            display="inline-block"
-            py={1}
-            sx={{ cursor: "pointer" }}
-          >
-            Home
-          </Typography>
-
           <Link
             component={RouterLink}
             to={`/`}
+            sx={{ textDecoration: "none" }}
+            color={"common.black"}
+          >
+            <Typography component="span" mr={3.5}>
+              Home
+            </Typography>
+          </Link>
+          <Link
+            component={RouterLink}
+            to={`/aboutus`}
             sx={{ textDecoration: "none" }}
             color={"common.black"}
           >
@@ -100,7 +90,7 @@ const Header = () => {
           </Link>
           <Link
             component={RouterLink}
-            to="/our-doctor"
+            to="/services"
             sx={{ textDecoration: "none" }}
             color={"common.black"}
           >
@@ -189,19 +179,6 @@ const Header = () => {
             gap={"10px"}
             mt={"10%"}
           >
-            <Typography
-              component="span"
-              mr={3.5}
-              variant="h5"
-              onClick={handleClick}
-              display="inline-block"
-              pb={1}
-              fontWeight={600}
-              sx={{ cursor: "pointer" }}
-            >
-              Centre of excellence
-            </Typography>
-
             <Link
               component={RouterLink}
               to={`/`}

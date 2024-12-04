@@ -1,4 +1,4 @@
-import { Box, Typography, Link } from "@mui/material";
+import { Box, Typography, Link, Grid, TextField, Button } from "@mui/material";
 import bookappointment from "assets/images/icons/book-app.png";
 import { Link as RouterLink } from "react-router-dom";
 import watsapp from "assets/images/icons/watsapp.png";
@@ -69,7 +69,100 @@ const BookAppointment = () => {
           borderRadius={"1rem"}
           p={4}
           bgcolor={"#ffffff3d"}
-        ></Box>
+        >
+          <Typography color={"white"} fontSize={"2.5rem"} fontWeight={"bold"}>
+            Book An Appointment
+          </Typography>
+
+          <Box>
+            <Grid container spacing={4} pt={2}>
+              <Grid item xs={6} md={6}>
+                <TextField
+                  fullWidth
+                  placeholder="Name"
+                  variant="filled"
+                  inputProps={{ name: "name" }}
+                  InputProps={{
+                    hiddenLabel: true,
+                    disableUnderline: true,
+                    sx: {
+                      background: "white",
+                      px: 1,
+                      "&:hover": {
+                        background: "white",
+                      },
+                    },
+                  }}
+                />
+              </Grid>
+              <Grid item xs={6} md={6}>
+                <TextField
+                  fullWidth
+                  placeholder="Email Address"
+                  variant="filled"
+                  inputProps={{ name: "email" }}
+                  InputProps={{
+                    hiddenLabel: true,
+                    disableUnderline: true,
+                    sx: {
+                      background: "white",
+                      px: 1,
+                      "&:hover": {
+                        background: "white",
+                      },
+                    },
+                  }}
+                />
+              </Grid>
+              <Grid item xs={6} md={6}>
+                <TextField
+                  fullWidth
+                  placeholder="Phone Number"
+                  variant="filled"
+                  inputProps={{ name: "phone" }}
+                  InputProps={{
+                    hiddenLabel: true,
+                    disableUnderline: true,
+                    sx: {
+                      background: "white",
+                      px: 1,
+                      "&:hover": {
+                        background: "white",
+                      },
+                    },
+                  }}
+                />
+              </Grid>
+              <Grid item xs={6} md={6}>
+                <TextField
+                  fullWidth
+                  placeholder="Car Model"
+                  variant="filled"
+                  inputProps={{ name: "carmodel" }}
+                  InputProps={{
+                    hiddenLabel: true,
+                    disableUnderline: true,
+                    sx: {
+                      background: "white",
+                      px: 1,
+                      "&:hover": {
+                        background: "white",
+                      },
+                    },
+                  }}
+                />
+              </Grid>
+            </Grid>
+            <Typography py={2}>
+              I agree to Vertron Privacy Policy & Terms of Use.
+            </Typography>
+            <Box textAlign={"center"}>
+              <Button variant="contained" sx={{ minWidth: "12rem" }}>
+                Submit
+              </Button>
+            </Box>
+          </Box>
+        </Box>
       </Box>
     </Box>
   );

@@ -3,7 +3,11 @@ import testimonial from "assets/images/icons/testimonial-img.png";
 
 const Testimonial = () => {
   return (
-    <Box display={"flex"} boxShadow={"0 0 20px 0 rgba(153,153,153,0.2)"}>
+    <Box
+      display={"flex"}
+      boxShadow={"0 0 20px 0 rgba(153,153,153,0.2)"}
+      bgcolor={"white"}
+    >
       <Box
         minWidth={"50%"}
         width={"50%"}
