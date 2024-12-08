@@ -1,5 +1,5 @@
 import { createBrowserRouter } from "react-router-dom";
-import { Main, Home, AboutUs, Services, Parts, Blog } from "views";
+import { Main, Home, AboutUs, Services, Parts, Blog, ContactUs } from "views";
 
 const router = createBrowserRouter([
   {
@@ -28,6 +28,11 @@ const router = createBrowserRouter([
       {
         path: "/blog",
         element: <Blog />,
+        index: true,
+      },
+      {
+        path: "/contact",
+        element: <ContactUs />,
         index: true,
       },
     ],
