@@ -1,5 +1,10 @@
 import { Banner, Trust, Process, Brands } from "./components";
-import { TestimonialWrapper, BlogsWrapper, BookAppointment } from "components";
+import {
+  TestimonialWrapper,
+  BlogsWrapper,
+  BookAppointment,
+  OurWork,
+} from "components";
 import whyVet from "assets/images/banner/whyvet.png";
 
 const AboutUs = () => {
@@ -13,6 +18,7 @@ const AboutUs = () => {
       <Brands />
       <TestimonialWrapper />
       <BlogsWrapper />
+      <OurWork />
     </>
   );
 };

@@ -4,7 +4,7 @@ import bg from "assets/images/icons/book-card.png";
 const BookAppointmentCard = () => {
   return (
     <Box
-      p={6}
+      p={4}
       sx={{
         background: `url(${bg}) no-repeat`,
         backgroundSize: "cover",

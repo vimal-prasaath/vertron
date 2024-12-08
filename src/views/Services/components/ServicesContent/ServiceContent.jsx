@@ -7,6 +7,7 @@ import {
   CarRepair,
 } from "./component";
 import { useState } from "react";
+import { BookAppointmentCard } from "components";
 const ServiceContent = () => {
   const [view, setView] = useState("annualMaintenance");
 
@@ -34,6 +35,9 @@ const ServiceContent = () => {
     <Box display={"flex"} px={10} py={6}>
       <Box>
         <ServiceList view={view} setView={setView} />
+        <Box px={3}>
+          <BookAppointmentCard />
+        </Box>
       </Box>
       <Box px={3}>{Content ? <Content /> : null}</Box>
     </Box>

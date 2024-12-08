@@ -6,3 +6,4 @@ export { default as BlogsWrapper } from "./BlogsWrapper";
 export { default as Blog } from "./Blog";
 export { default as BookAppointment } from "./BookAppointment";
 export { default as BookAppointmentCard } from "./BookAppointmentCard";
+export { default as OurWork } from "./OurWork";

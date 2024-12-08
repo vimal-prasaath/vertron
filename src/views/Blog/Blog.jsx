@@ -1,5 +1,5 @@
 import { Banner, BlogContent } from "./components";
-import { TestimonialWrapper, BlogsWrapper } from "components";
+import { TestimonialWrapper, BlogsWrapper, OurWork } from "components";
 
 const Blogs = () => {
   return (
@@ -8,6 +8,7 @@ const Blogs = () => {
       <BlogContent />
       <TestimonialWrapper />
       <BlogsWrapper />
+      <OurWork />
     </>
   );
 };

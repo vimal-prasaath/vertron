@@ -1,5 +1,5 @@
 import { Banner, Trust, Engine, BookAppointment } from "./components";
-import { BlogsWrapper, TestimonialWrapper } from "components";
+import { BlogsWrapper, TestimonialWrapper, OurWork } from "components";
 import partner from "assets/images/banner/partner.png";
 import { Box } from "@mui/material";
 
@@ -15,6 +15,7 @@ const Parts = () => {
       <BookAppointment />
       <TestimonialWrapper />
       <BlogsWrapper />
+      <OurWork />
     </>
   );
 };
