@@ -135,7 +135,7 @@ const Header = () => {
         </Box>
         <Box display="flex">
           <Link
-            to="https://wa.me/917695957120"
+            to="https://wa.me/918939854430"
             target="_blank"
             display="flex"
             mr={4}
@@ -157,7 +157,7 @@ const Header = () => {
             >
               <Typography variant="subtitle2">Whatsapp</Typography>
               <Typography variant="subtitle2" fontWeight="bold">
-                +91 76959 57120
+                +91-89398 54430
               </Typography>
             </Box>
           </Link>

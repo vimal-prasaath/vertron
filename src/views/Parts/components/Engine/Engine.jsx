@@ -40,7 +40,7 @@ const Engine = () => {
           <Button variant="contained">GET IN TOUCH</Button>
 
           <Link
-            to="https://wa.me/917695957120"
+            to="https://wa.me/918939854430"
             target="_blank"
             display="flex"
             ml={4}
@@ -62,7 +62,7 @@ const Engine = () => {
             >
               <Typography variant="subtitle2">Need Help?</Typography>
               <Typography variant="subtitle2" fontWeight="bold">
-                +91 76959 57120
+                +91-89398 54430
               </Typography>
             </Box>
           </Link>
