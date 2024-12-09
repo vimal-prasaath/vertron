@@ -12,7 +12,11 @@ const CartPart = () => {
       color={"white"}
       flexWrap={"wrap"}
     >
-      <Box width={{ md: "50%", xs: "100%" }} px={{ xs: 0, md: 10 }}>
+      <Box
+        width={{ md: "50%", xs: "100%" }}
+        minWidth={{ md: "50%", xs: "100%" }}
+        px={{ xs: 0, md: 10 }}
+      >
         <Typography
           fontSize={{ xs: "2rem", md: "2.5rem" }}
           fontWeight={600}
@@ -35,6 +39,7 @@ const CartPart = () => {
       </Box>
       <Box
         minWidth={{ md: "50%", xs: "100%" }}
+        width={{ md: "50%", xs: "100%" }}
         px={{ xs: 0, md: 10 }}
         textAlign={{ xs: "center", md: "right" }}
       >
