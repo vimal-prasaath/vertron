@@ -1,12 +1,5 @@
 import React from "react";
-import {
-  Box,
-  Typography,
-  Button,
-  Link,
-  IconButton,
-  Drawer,
-} from "@mui/material";
+import { Box, Typography, Link, IconButton, Drawer } from "@mui/material";
 import { Link as RouterLink } from "react-router-dom";
 
 import MenuIcon from "@mui/icons-material/Menu";
@@ -242,22 +235,6 @@ const Header = () => {
               <Typography component="span" fontWeight={600} variant="h5">
                 Contact Us
               </Typography>
-            </Link>
-          </Box>
-          <Box pt={5}>
-            <Link
-              to="tel:+919600711818"
-              component={RouterLink}
-              sx={{ textDecoration: "none" }}
-              color={"common.black"}
-            >
-              <Button
-                variant="contained"
-                color="secondary"
-                sx={{ py: 1.25, minWidth: "14rem" }}
-              >
-                Emergency Call
-              </Button>
             </Link>
           </Box>
         </Box>
