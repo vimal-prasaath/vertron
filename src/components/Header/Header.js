@@ -60,14 +60,18 @@ const Header = () => {
             sx={{ textDecoration: "none", position: "relative" }}
             color={"common.black"}
           >
-            <img
-              src={logo}
-              alt="logo"
-              style={{ width: "9rem", position: "absolute", top: "-1.75rem" }}
-            />
+            <Box
+              sx={{
+                width: { xs: "5rem", md: "9rem" },
+                position: { sx: "static", md: "absolute" },
+                top: "-1.75rem",
+              }}
+            >
+              <img src={logo} alt="logo" width={"100%"} />
+            </Box>
           </Link>
         </Box>
-        <Box display="flex" alignItems="center">
+        <Box display={{ xs: "none", md: "flex" }} alignItems="center">
           <Link
             component={RouterLink}
             to={`/`}
@@ -186,27 +190,47 @@ const Header = () => {
               color={"common.black"}
             >
               <Typography component="span" pb={1} fontWeight={600} variant="h5">
-                Eye Care
+                Home
               </Typography>
             </Link>
             <Link
               component={RouterLink}
-              to="/our-doctor"
+              to="/aboutus"
               sx={{ textDecoration: "none", pb: 1 }}
               color={"common.black"}
             >
               <Typography component="span" pb={1} fontWeight={600} variant="h5">
-                Our Doctors
+                About Us
               </Typography>
             </Link>
             <Link
               component={RouterLink}
-              to="/blog/1"
+              to="/services"
               sx={{ textDecoration: "none", pb: 1 }}
               color={"common.black"}
             >
               <Typography component="span" pb={1} fontWeight={600} variant="h5">
-                Blogs
+                Services
+              </Typography>
+            </Link>
+            <Link
+              component={RouterLink}
+              to="/parts"
+              sx={{ textDecoration: "none", pb: 1 }}
+              color={"common.black"}
+            >
+              <Typography component="span" fontWeight={600} variant="h5">
+                Parts
+              </Typography>
+            </Link>
+            <Link
+              component={RouterLink}
+              to="/blog"
+              sx={{ textDecoration: "none", pb: 1 }}
+              color={"common.black"}
+            >
+              <Typography component="span" fontWeight={600} variant="h5">
+                Blog
               </Typography>
             </Link>
             <Link

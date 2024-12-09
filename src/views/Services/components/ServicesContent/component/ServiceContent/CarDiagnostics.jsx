@@ -5,14 +5,15 @@ const CarDiagnostics = () => {
   return (
     <Box>
       <Typography
-        fontSize={"3rem"}
+        fontSize={{ xs: "2rem", md: "3rem" }}
         fontWeight={600}
         textTransform={"uppercase"}
+        mt={{ xs: 3, md: 0 }}
       >
         Car Diagnostics
       </Typography>
       <Typography
-        fontSize={"2rem"}
+        fontSize={{ xs: "1.75rem", md: "2rem" }}
         my={2}
         fontWeight={600}
         textTransform={"uppercase"}
@@ -33,7 +34,7 @@ const CarDiagnostics = () => {
         </Box>
       </Box>
       <Typography
-        fontSize={"3rem"}
+        fontSize={{ xs: "1.75rem", md: "3rem" }}
         my={2}
         fontWeight={600}
         textTransform={"uppercase"}
@@ -53,7 +54,7 @@ const CarDiagnostics = () => {
         <img src={maintaince} alt="maintaince" width={"100%"} />
       </Box>
       <Typography
-        fontSize={"3rem"}
+        fontSize={{ xs: "1.75rem", md: "3rem" }}
         my={2}
         fontWeight={600}
         textTransform={"uppercase"}

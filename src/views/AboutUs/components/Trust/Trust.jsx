@@ -5,13 +5,23 @@ const Trust = () => {
   return (
     <Box
       display={"flex"}
-      px={10}
+      flexWrap={"wrap"}
+      px={{ xs: 4, md: 10 }}
+      py={{ xs: 4, md: 10 }}
       alignItems={"center"}
       bgcolor={"#ECEDEF"}
-      py={10}
     >
-      <Box minWidth={"50%"} width={"50%"} pr={10}>
-        <Typography fontSize={"2.5rem"} fontWeight={600} mb={5}>
+      <Box
+        width={{ xs: "100%", md: "50%" }}
+        minWidth={{ xs: "100%", md: "50%" }}
+        pr={{ xs: 0, md: 10 }}
+        mb={2}
+      >
+        <Typography
+          fontSize={{ xs: "2rem", md: "2.5rem" }}
+          fontWeight={600}
+          mb={5}
+        >
           VERTRON SYMBOLIZES TRUST
         </Typography>
         <Typography fontSize={"1.25rem"} my={2}>
@@ -26,7 +36,12 @@ const Trust = () => {
           is infused with dedication and integrity.
         </Typography>
       </Box>
-      <Box minWidth={"50%"} width={"50%"} pr={10} textAlign={"right"}>
+      <Box
+        width={{ xs: "100%", md: "50%" }}
+        minWidth={{ xs: "100%", md: "50%" }}
+        pr={{ xs: 0, md: 10 }}
+        textAlign={{ xs: "center", md: "right" }}
+      >
         <img src={trust} alt="trust" width={"80%"} />
       </Box>
     </Box>

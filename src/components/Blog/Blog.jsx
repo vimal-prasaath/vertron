@@ -4,7 +4,7 @@ import blog from "assets/images/icons/blog.png";
 const Blog = () => {
   return (
     <Box>
-      <Box maxWidth={"34rem"}>
+      <Box>
         <img src={blog} alt="blog" width={"100%"} />
       </Box>
       <Box>

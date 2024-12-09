@@ -27,7 +27,13 @@ const Testimonial = () => {
         </Box>
       </Box>
       <Box minWidth={"50%"} width={"50%"}>
-        <img src={testimonial} alt="consult" width={"100%"} />
+        <img
+          src={testimonial}
+          alt="consult"
+          width={"100%"}
+          height={"100%"}
+          style={{ objectFit: "cover" }}
+        />
       </Box>
     </Box>
   );

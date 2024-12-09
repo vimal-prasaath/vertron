@@ -7,15 +7,15 @@ const Banner = () => {
     <>
       <BannerContainer
         image={banner}
-        px={10}
+        px={{ md: 10, xs: 4 }}
         display="flex"
         justifyContent="center"
         flexDirection="column"
       >
         <Typography
-          fontSize="3.125rem"
+          fontSize={{ xs: "2.5rem", md: "3.125rem" }}
           fontWeight={600}
-          width="45%"
+          width={{ xs: "100%", md: "45%" }}
           color={"#fff"}
           textTransform={"uppercase"}
         >

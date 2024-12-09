@@ -7,8 +7,8 @@ const BookAppointment = () => {
   return (
     <Box
       minHeight={"50rem"}
-      px={10}
-      py={6}
+      px={{ xs: 4, md: 10 }}
+      py={{ xs: 4, md: 6 }}
       color={"white"}
       sx={{
         background: `url(${bookappointment}) no-repeat`,
@@ -16,13 +16,18 @@ const BookAppointment = () => {
       }}
       display={"flex"}
       alignItems={"center"}
+      flexWrap={"wrap"}
     >
-      <Box width={"40%"} minWidth={"40%"}>
+      <Box
+        width={{ md: "40%", xs: "100%" }}
+        minWidth={{ md: "40%", xs: "100%" }}
+      >
         <Typography
-          fontSize={"2.5rem"}
+          fontSize={{ xs: "2rem", md: "2.5rem" }}
           fontWeight={600}
           mb={3}
           textTransform={"uppercase"}
+          textAlign={{ xs: "center", md: "left" }}
         >
           We care for Your Car just Like You do
         </Typography>
@@ -32,7 +37,7 @@ const BookAppointment = () => {
           possible step to ensure that your experience with us is pleasant and
           efficient.
         </Typography>
-        <Box display="flex">
+        <Box display="flex" mb={3}>
           <Link
             to="https://wa.me/917695957120"
             target="_blank"
@@ -62,7 +67,12 @@ const BookAppointment = () => {
           </Link>
         </Box>
       </Box>
-      <Box width={"60%"} minWidth={"60%"} height={"100%"} pl={"10%"}>
+      <Box
+        width={{ xs: "100%", md: "60%" }}
+        minWidth={{ xs: "100%", md: "60%" }}
+        height={"100%"}
+        pl={{ xs: "0", md: "10%" }}
+      >
         <Box
           border={1}
           borderColor={"#fff"}
@@ -76,7 +86,7 @@ const BookAppointment = () => {
 
           <Box>
             <Grid container spacing={4} pt={2}>
-              <Grid item xs={6} md={6}>
+              <Grid item xs={12} md={6}>
                 <TextField
                   fullWidth
                   placeholder="Name"
@@ -95,7 +105,7 @@ const BookAppointment = () => {
                   }}
                 />
               </Grid>
-              <Grid item xs={6} md={6}>
+              <Grid item xs={12} md={6}>
                 <TextField
                   fullWidth
                   placeholder="Email Address"
@@ -114,7 +124,7 @@ const BookAppointment = () => {
                   }}
                 />
               </Grid>
-              <Grid item xs={6} md={6}>
+              <Grid item xs={12} md={6}>
                 <TextField
                   fullWidth
                   placeholder="Phone Number"
@@ -133,7 +143,7 @@ const BookAppointment = () => {
                   }}
                 />
               </Grid>
-              <Grid item xs={6} md={6}>
+              <Grid item xs={12} md={6}>
                 <TextField
                   fullWidth
                   placeholder="Car Model"

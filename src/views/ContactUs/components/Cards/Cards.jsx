@@ -9,7 +9,7 @@ const AddressCard = () => {
       <Typography
         width={"100%"}
         fontWeight={600}
-        fontSize={"2rem"}
+        fontSize={{ xs: "1.75rem", md: "2rem" }}
         textTransform={"uppercase"}
         mb={2}
       >
@@ -31,7 +31,7 @@ const TimingCard = () => {
       <Typography
         width={"100%"}
         fontWeight={600}
-        fontSize={"2rem"}
+        fontSize={{ xs: "1.75rem", md: "2rem" }}
         textTransform={"uppercase"}
         mb={2}
       >
@@ -74,7 +74,7 @@ const ContactCard = () => {
       <Typography
         width={"100%"}
         fontWeight={600}
-        fontSize={"2rem"}
+        fontSize={{ xs: "1.75rem", md: "2rem" }}
         textTransform={"uppercase"}
         mb={2}
       >
@@ -97,7 +97,7 @@ const ContactCard = () => {
 
 const Cards = () => {
   return (
-    <Box px={10} py={6}>
+    <Box px={{ xs: 4, md: 10 }} py={{ xs: 4, md: 6 }}>
       <Grid container spacing={4} pt={2}>
         <Grid item xs={12} md={4}>
           <AddressCard />

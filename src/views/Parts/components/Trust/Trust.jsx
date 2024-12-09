@@ -7,20 +7,26 @@ const Trust = () => {
   return (
     <Box
       display={"flex"}
-      px={10}
+      flexWrap={"wrap"}
+      px={{ xs: 4, md: 10 }}
+      py={{ xs: 4, md: 10 }}
       alignItems={"center"}
       // bgcolor={"#ECEDEF"}
-      py={10}
     >
-      <Box minWidth={"50%"} width={"50%"} pr={10}>
+      <Box
+        minWidth={{ md: "50%", xs: "100%" }}
+        width={{ md: "50%", xs: "100%" }}
+        pr={{ xs: 0, md: 10 }}
+      >
         <Typography
-          fontSize={"2.5rem"}
+          fontSize={{ xs: "2rem", md: "2.5rem" }}
           fontWeight={600}
+          textAlign={{ xs: "center", md: "left" }}
           textTransform={"uppercase"}
         >
           We Source Genuine Car Parts  from Across the Globe
         </Typography>
-        <Typography fontSize={"2.25rem"} my={2}>
+        <Typography fontSize={{ xs: "1.75rem", md: "2.25rem" }} my={2}>
           Doesn’t Matter If It Is Too Small Or Too Big To Be Shipped
         </Typography>
         <Typography fontSize={"1.25rem"} my={2}>
@@ -30,7 +36,12 @@ const Trust = () => {
           a rare component or a specialized part, trust us to deliver
           authenticity and quality for your cherished vehicle.
         </Typography>
-        <Box display="flex" alignItems={"center"} my={4}>
+        <Box
+          display="flex"
+          alignItems={"center"}
+          justifyContent={{ xs: "center", md: "flex-start" }}
+          my={4}
+        >
           <Button variant="contained">GET IN TOUCH</Button>
 
           <Link
@@ -62,7 +73,12 @@ const Trust = () => {
           </Link>
         </Box>
       </Box>
-      <Box minWidth={"50%"} width={"50%"} pr={10} textAlign={"right"}>
+      <Box
+        minWidth={{ md: "50%", xs: "100%" }}
+        width={{ md: "50%", xs: "100%" }}
+        pr={{ xs: 0, md: 10 }}
+        textAlign={{ xs: "center", md: "right" }}
+      >
         <img src={source} alt="trust" width={"80%"} />
       </Box>
     </Box>

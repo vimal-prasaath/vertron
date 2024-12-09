@@ -5,13 +5,13 @@ import c3 from "assets/images/icons/c3.png";
 
 const OurWork = () => {
   return (
-    <Box px={10} py={8} bgcolor="black">
+    <Box px={{ xs: 4, md: 10 }} py={{ xs: 4, md: 8 }} bgcolor="black">
       <Typography
         color={"#fff"}
-        fontSize={"2.5rem"}
+        fontSize={{ xs: "2rem", md: "2.5rem" }}
         fontWeight={600}
         mb={4}
-        textTransform={"uppercase"}
+        textAlign={{ xs: "center", md: "left" }}
       >
         Our Work in Pictures
       </Typography>

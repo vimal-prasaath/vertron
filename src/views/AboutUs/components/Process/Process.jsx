@@ -4,16 +4,35 @@ import watsapp from "assets/images/icons/watsapp.png";
 
 const Process = () => {
   return (
-    <Box display={"flex"} px={10} py={6}>
-      <Box minWidth={"40%"} pr={6}>
-        <Typography fontSize={"2.5rem"} fontWeight={600} mb={3}>
+    <Box
+      display={"flex"}
+      flexWrap={"wrap"}
+      px={{ xs: 4, md: 10 }}
+      py={{ xs: 4, md: 6 }}
+    >
+      <Box
+        width={{ xs: "100%", md: "40%" }}
+        minWidth={{ xs: "100%", md: "40%" }}
+        pr={6}
+      >
+        <Typography
+          fontSize={{ xs: "2rem", md: "2.5rem" }}
+          fontWeight={600}
+          mb={3}
+          textAlign={{ xs: "center", md: "left" }}
+        >
           OUR 4-STEP PROCESS
         </Typography>
         <Typography fontSize={"1.25rem"}>
           At Vertron, we follow a 4-step process to ensure your car receives
           unparalleled care and attention:
         </Typography>
-        <Box display="flex" alignItems={"center"} my={4}>
+        <Box
+          display="flex"
+          alignItems={"center"}
+          justifyContent={{ xs: "center", md: "flex-start" }}
+          my={4}
+        >
           <Button variant="contained">GET IN TOUCH</Button>
 
           <Link
@@ -45,9 +64,12 @@ const Process = () => {
           </Link>
         </Box>
       </Box>
-      <Box minWidth={"60%"}>
+      <Box
+        width={{ xs: "100%", md: "60%" }}
+        minWidth={{ xs: "100%", md: "60%" }}
+      >
         <Grid container spacing={4} pt={2}>
-          <Grid item xs={6} md={6}>
+          <Grid item xs={12} md={6}>
             <Box borderTop={1} borderColor={"#D8D8D8"}>
               <Typography fontSize={"1.5rem"} my={2}>
                 01. Digital Diagnostic
@@ -58,7 +80,7 @@ const Process = () => {
               </Typography>
             </Box>
           </Grid>
-          <Grid item xs={6} md={6}>
+          <Grid item xs={12} md={6}>
             <Box borderTop={1} borderColor={"#D8D8D8"}>
               <Typography fontSize={"1.5rem"} my={2}>
                 02. Physical Diagnostic
@@ -70,7 +92,7 @@ const Process = () => {
               </Typography>
             </Box>
           </Grid>
-          <Grid item xs={6} md={6}>
+          <Grid item xs={12} md={6}>
             <Box borderTop={1} borderColor={"#D8D8D8"}>
               <Typography fontSize={"1.5rem"} my={2}>
                 03. Service Proposal
@@ -83,7 +105,7 @@ const Process = () => {
               </Typography>
             </Box>
           </Grid>
-          <Grid item xs={6} md={6}>
+          <Grid item xs={12} md={6}>
             <Box borderTop={1} borderColor={"#D8D8D8"}>
               <Typography fontSize={"1.5rem"} my={2}>
                 04. Delivery

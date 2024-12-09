@@ -7,15 +7,21 @@ const Engine = () => {
   return (
     <Box
       display={"flex"}
-      px={10}
+      px={{ xs: 4, md: 10 }}
+      py={{ xs: 4, md: 10 }}
       alignItems={"center"}
+      flexWrap={"wrap"}
       // bgcolor={"#ECEDEF"}
-      py={10}
     >
-      <Box minWidth={"50%"} width={"50%"} pr={10}>
+      <Box
+        minWidth={{ md: "50%", xs: "100%" }}
+        width={{ md: "50%", xs: "100%" }}
+        pr={{ xs: 0, md: 10 }}
+      >
         <Typography
-          fontSize={"2.5rem"}
+          fontSize={{ xs: "2rem", md: "2.5rem" }}
           fontWeight={600}
+          textAlign={{ xs: "center", md: "left" }}
           textTransform={"uppercase"}
         >
           Roaring Engines Captivate Us & Smell of Interior Leathers Energize us
@@ -25,7 +31,12 @@ const Engine = () => {
           now for personalised car care solutions tailored to your needs and
           experience peace of mind and exceptional service.
         </Typography>
-        <Box display="flex" alignItems={"center"} my={4}>
+        <Box
+          display="flex"
+          alignItems={"center"}
+          justifyContent={{ xs: "center", md: "flex-start" }}
+          my={4}
+        >
           <Button variant="contained">GET IN TOUCH</Button>
 
           <Link
@@ -57,7 +68,12 @@ const Engine = () => {
           </Link>
         </Box>
       </Box>
-      <Box minWidth={"50%"} width={"50%"} pr={10} textAlign={"right"}>
+      <Box
+        minWidth={{ md: "50%", xs: "100%" }}
+        width={{ md: "50%", xs: "100%" }}
+        pr={{ xs: 0, md: 10 }}
+        textAlign={{ xs: "center", md: "right" }}
+      >
         <img src={source} alt="trust" width={"80%"} />
       </Box>
     </Box>

@@ -1,5 +1,6 @@
-import { Box, Button, TextField, Typography, Grid } from "@mui/material";
+import { Box, Button, TextField, Typography, Grid, Link } from "@mui/material";
 import logo from "assets/images/icons/logo.png";
+import { Link as RouterLink } from "react-router-dom";
 
 import LocationOnOutlinedIcon from "@mui/icons-material/LocationOnOutlined";
 import LocalPhoneOutlinedIcon from "@mui/icons-material/LocalPhoneOutlined";
@@ -14,15 +15,24 @@ import FacebookRoundedIcon from "@mui/icons-material/FacebookRounded";
 const Footer = () => {
   return (
     <Box borderTop={1} borderColor={"#EEEEEE"} pt={4}>
-      <Box px={10}>
+      <Box px={{ md: 10, xs: 4 }}>
         <Box
           pb={2}
           display={"flex"}
           alignItems={"center"}
           justifyContent={"space-between"}
+          flexWrap={"wrap"}
         >
-          <img src={logo} width={"100px"} alt="logo" />
-          <Box display={"flex"} alignItems={"center"}>
+          <Box display={{ xs: "none", md: "block" }}>
+            <img src={logo} width={"100px"} alt="logo" />
+          </Box>
+
+          <Box
+            display={"flex"}
+            flexWrap={"wrap"}
+            alignItems={"center"}
+            justifyContent={"space-between"}
+          >
             <Typography fontSize={"1.75rem"} fontWeight={600} mr={2}>
               Sign Up For Newsletter
             </Typography>
@@ -50,7 +60,12 @@ const Footer = () => {
               >
                 Company
               </Typography>
-              <Typography fontSize={"1.125rem"} color="#555" my={1} width="60%">
+              <Typography
+                fontSize={"1.125rem"}
+                color="#555"
+                my={1}
+                width={{ xs: "100%", md: "60%" }}
+              >
                 Korem ipsum dolor sit amet, consectetur adipiscing elit. Etiam
                 eu turpis molestie, dictum est a, mattis tellus. Sed dignissim,
                 metus nec fringilla accumsan
@@ -79,7 +94,7 @@ const Footer = () => {
                 </Box>
               </Box>
             </Grid>
-            <Grid item xs={12} md={3.5}>
+            <Grid item xs={4} md={3.5}>
               <Typography
                 fontSize={"1.25rem"}
                 fontWeight={600}
@@ -88,24 +103,69 @@ const Footer = () => {
                 Navigation
               </Typography>
               <Box>
-                <Typography fontSize={"1.125rem"} color="#555" my={1}>
-                  Home
-                </Typography>
-                <Typography fontSize={"1.125rem"} color="#555" my={1}>
-                  Services
-                </Typography>
-                <Typography fontSize={"1.125rem"} color="#555" my={1}>
-                  Parts
-                </Typography>
-                <Typography fontSize={"1.125rem"} color="#555" my={1}>
-                  Blog
-                </Typography>
-                <Typography fontSize={"1.125rem"} color="#555" my={1}>
-                  Contact Us
-                </Typography>
+                <Link
+                  component={RouterLink}
+                  to={`/`}
+                  sx={{ textDecoration: "none" }}
+                  color={"common.black"}
+                >
+                  <Typography fontSize={"1.125rem"} color="#555" my={1}>
+                    Home
+                  </Typography>
+                </Link>
+                <Link
+                  component={RouterLink}
+                  to={`/aboutus`}
+                  sx={{ textDecoration: "none" }}
+                  color={"common.black"}
+                >
+                  <Typography fontSize={"1.125rem"} color="#555" my={1}>
+                    About Us
+                  </Typography>
+                </Link>
+                <Link
+                  component={RouterLink}
+                  to="/services"
+                  sx={{ textDecoration: "none" }}
+                  color={"common.black"}
+                >
+                  <Typography fontSize={"1.125rem"} color="#555" my={1}>
+                    Services
+                  </Typography>
+                </Link>
+                <Link
+                  component={RouterLink}
+                  to="/parts"
+                  sx={{ textDecoration: "none" }}
+                  color={"common.black"}
+                >
+                  <Typography fontSize={"1.125rem"} color="#555" my={1}>
+                    Parts
+                  </Typography>
+                </Link>
+                <Link
+                  component={RouterLink}
+                  to="/blog"
+                  sx={{ textDecoration: "none" }}
+                  color={"common.black"}
+                >
+                  <Typography fontSize={"1.125rem"} color="#555" my={1}>
+                    Blog
+                  </Typography>
+                </Link>
+                <Link
+                  component={RouterLink}
+                  to="/contact"
+                  sx={{ textDecoration: "none" }}
+                  color={"common.black"}
+                >
+                  <Typography fontSize={"1.125rem"} color="#555" my={1}>
+                    Contact Us
+                  </Typography>
+                </Link>
               </Box>
             </Grid>
-            <Grid item xs={12} md={3.5}>
+            <Grid item xs={8} md={3.5}>
               <Typography
                 fontSize={"1.25rem"}
                 fontWeight={600}

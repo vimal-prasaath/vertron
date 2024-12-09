@@ -32,14 +32,19 @@ const ServiceContent = () => {
   }
 
   return (
-    <Box display={"flex"} px={10} py={6}>
+    <Box
+      display={"flex"}
+      px={{ xs: 4, md: 10 }}
+      py={{ xs: 4, md: 6 }}
+      flexDirection={{ xs: "column", md: "row" }}
+    >
       <Box>
         <ServiceList view={view} setView={setView} />
-        <Box px={3}>
+        <Box px={{ md: 3, xs: 0 }}>
           <BookAppointmentCard />
         </Box>
       </Box>
-      <Box px={3}>{Content ? <Content /> : null}</Box>
+      <Box px={{ md: 3, xs: 0 }}>{Content ? <Content /> : null}</Box>
     </Box>
   );
 };

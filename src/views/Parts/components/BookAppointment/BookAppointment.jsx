@@ -5,26 +5,36 @@ const BookAppointment = () => {
   return (
     <Box
       minHeight={"50rem"}
-      px={10}
-      py={6}
+      px={{ xs: 4, md: 10 }}
+      py={{ xs: 4, md: 6 }}
       color={"white"}
       sx={{
         background: `url(${bookappointment}) no-repeat`,
         backgroundSize: "cover",
+        backgroundPosition: "bottom",
       }}
       display={"flex"}
       alignItems={"center"}
+      flexWrap={"wrap"}
     >
-      <Box width={"35%"} minWidth={"35%"}>
+      <Box
+        minWidth={{ md: "35%", xs: "100%" }}
+        width={{ md: "35%", xs: "100%" }}
+      >
         <Typography
-          fontSize={"2.5rem"}
+          fontSize={{ xs: "2rem", md: "2.5rem" }}
           fontWeight={600}
+          textAlign={{ xs: "center", md: "left" }}
           mb={2}
           textTransform={"uppercase"}
         >
           Need a General or Routine Car Part?
         </Typography>
-        <Typography fontSize={"2rem"} mb={2} textTransform={"uppercase"}>
+        <Typography
+          fontSize={{ xs: "1.75rem", md: "2rem" }}
+          mb={2}
+          textTransform={"uppercase"}
+        >
           We Have Got You Covered Again!
         </Typography>
         <Typography fontSize={"1.125rem"} mb={3} lineHeight={2}>
@@ -34,7 +44,12 @@ const BookAppointment = () => {
           complexity of the part needed
         </Typography>
       </Box>
-      <Box width={"55%"} minWidth={"55%"} height={"100%"} pl={"15%"}>
+      <Box
+        minWidth={{ md: "55%", xs: "100%" }}
+        width={{ md: "55%", xs: "100%" }}
+        height={"100%"}
+        pl={{ xs: 0, md: "15%" }}
+      >
         <Box
           border={1}
           borderColor={"#fff"}
@@ -42,13 +57,17 @@ const BookAppointment = () => {
           p={4}
           bgcolor={"#ffffff3d"}
         >
-          <Typography color={"white"} fontSize={"2.5rem"} fontWeight={"bold"}>
+          <Typography
+            color={"white"}
+            fontSize={{ xs: "2rem", md: "2.5rem" }}
+            fontWeight={"bold"}
+          >
             Enquire For Custom Parts
           </Typography>
 
           <Box>
             <Grid container spacing={4} pt={2}>
-              <Grid item xs={6} md={6}>
+              <Grid item xs={12} md={6}>
                 <TextField
                   fullWidth
                   placeholder="Name"
@@ -67,7 +86,7 @@ const BookAppointment = () => {
                   }}
                 />
               </Grid>
-              <Grid item xs={6} md={6}>
+              <Grid item xs={12} md={6}>
                 <TextField
                   fullWidth
                   placeholder="Email Address"
@@ -86,7 +105,7 @@ const BookAppointment = () => {
                   }}
                 />
               </Grid>
-              <Grid item xs={6} md={6}>
+              <Grid item xs={12} md={6}>
                 <TextField
                   fullWidth
                   placeholder="Phone Number"
@@ -105,7 +124,7 @@ const BookAppointment = () => {
                   }}
                 />
               </Grid>
-              <Grid item xs={6} md={6}>
+              <Grid item xs={12} md={6}>
                 <TextField
                   fullWidth
                   placeholder="Car Model"

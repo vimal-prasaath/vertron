@@ -2,11 +2,20 @@ import { Box, Typography, Grid, TextField, Button } from "@mui/material";
 
 const ContactForm = () => {
   return (
-    <Box display={"flex"} px={10} py={6}>
-      <Box width={"50%"} minWidth={"50%"} pr={2}>
-        <Box width={"80%"}>
+    <Box
+      display={"flex"}
+      flexWrap={"wrap"}
+      px={{ xs: 4, md: 10 }}
+      py={{ xs: 4, md: 6 }}
+    >
+      <Box
+        width={{ xs: "100%", md: "50%" }}
+        minWidth={{ xs: "100%", md: "50%" }}
+        pr={2}
+      >
+        <Box width={{ xs: "100%", md: "80%" }}>
           <Typography
-            fontSize={"2.5rem"}
+            fontSize={{ xs: "2rem", md: "2.5rem" }}
             fontWeight={600}
             textTransform={"uppercase"}
           >
@@ -18,10 +27,14 @@ const ContactForm = () => {
           </Typography>
         </Box>
       </Box>
-      <Box width={"50%"} minWidth={"50%"} px={2}>
+      <Box
+        width={{ xs: "100%", md: "50%" }}
+        minWidth={{ xs: "100%", md: "50%" }}
+        px={{ xs: 0, md: 2 }}
+      >
         <Box>
           <Grid container spacing={4} pt={2}>
-            <Grid item xs={6} md={6}>
+            <Grid item xs={12} md={6}>
               <TextField
                 fullWidth
                 placeholder="Name"
@@ -40,7 +53,7 @@ const ContactForm = () => {
                 }}
               />
             </Grid>
-            <Grid item xs={6} md={6}>
+            <Grid item xs={12} md={6}>
               <TextField
                 fullWidth
                 placeholder="Email Address"
@@ -59,7 +72,7 @@ const ContactForm = () => {
                 }}
               />
             </Grid>
-            <Grid item xs={6} md={6}>
+            <Grid item xs={12} md={6}>
               <TextField
                 fullWidth
                 placeholder="Phone Number"
@@ -78,7 +91,7 @@ const ContactForm = () => {
                 }}
               />
             </Grid>
-            <Grid item xs={6} md={6}>
+            <Grid item xs={12} md={6}>
               <TextField
                 fullWidth
                 placeholder="Car Model"

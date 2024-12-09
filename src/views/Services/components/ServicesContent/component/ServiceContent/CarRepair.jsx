@@ -5,14 +5,15 @@ const CarRepair = () => {
   return (
     <Box>
       <Typography
-        fontSize={"3rem"}
+        fontSize={{ xs: "2rem", md: "3rem" }}
         fontWeight={600}
         textTransform={"uppercase"}
+        mt={{ xs: 3, md: 0 }}
       >
         Car Repairs
       </Typography>
       <Typography
-        fontSize={"2rem"}
+        fontSize={{ xs: "1.75rem", md: "2rem" }}
         my={2}
         fontWeight={600}
         textTransform={"uppercase"}
@@ -33,7 +34,8 @@ const CarRepair = () => {
         </Box>
       </Box>
       <Typography
-        fontSize={"3rem"}
+        // fontSize={"3rem"}
+        fontSize={{ xs: "1.75rem", md: "3rem" }}
         my={2}
         fontWeight={600}
         textTransform={"uppercase"}
@@ -50,7 +52,8 @@ const CarRepair = () => {
         </Typography>
       </Box>
       <Typography
-        fontSize={"3rem"}
+        // fontSize={"3rem"}
+        fontSize={{ xs: "1.75rem", md: "3rem" }}
         my={2}
         fontWeight={600}
         textTransform={"uppercase"}

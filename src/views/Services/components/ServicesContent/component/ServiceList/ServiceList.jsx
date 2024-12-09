@@ -13,7 +13,7 @@ const ServiceList = ({ view, setView }) => {
     <Box
       maxWidth={{ md: "24.5rem", xs: "100%" }}
       minWidth={{ md: "24.5rem", xs: "100%" }}
-      px={3}
+      px={{ md: 3, xs: 0 }}
       borderRadius="1rem"
     >
       <Typography
@@ -21,7 +21,7 @@ const ServiceList = ({ view, setView }) => {
         pb={2}
         borderColor="#e8e8e8"
         fontWeight={600}
-        fontSize={"3rem"}
+        fontSize={{ xs: "2rem", md: "3rem" }}
       >
         SERVICE LIST
       </Typography>

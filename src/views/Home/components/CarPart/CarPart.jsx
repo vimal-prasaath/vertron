@@ -5,14 +5,19 @@ const CartPart = () => {
   return (
     <Box
       display={"flex"}
-      px={10}
+      px={{ xs: 4, md: 10 }}
+      py={{ xs: 4, md: 5 }}
       alignItems={"center"}
       bgcolor={"#000000"}
       color={"white"}
-      py={5}
+      flexWrap={"wrap"}
     >
-      <Box minWidth={"50%"} width={"50%"} px={10}>
-        <Typography fontSize={"2.5rem"} fontWeight={600}>
+      <Box width={{ md: "50%", xs: "100%" }} px={{ xs: 0, md: 10 }}>
+        <Typography
+          fontSize={{ xs: "2rem", md: "2.5rem" }}
+          fontWeight={600}
+          textAlign={{ xs: "center", md: "left" }}
+        >
           Looking for a Rare Luxury Car Part?
         </Typography>
         <Typography fontSize={"1.5rem"} my={2} fontWeight={600}>
@@ -24,9 +29,15 @@ const CartPart = () => {
           cherished vehicle, no matter how intricate or rare.
         </Typography>
         <Typography mb={2}>KNOW MORE</Typography>
-        <Button variant="contained">Get In touch</Button>
+        <Box textAlign={{ xs: "center", md: "left" }}>
+          <Button variant="contained">Get In touch</Button>
+        </Box>
       </Box>
-      <Box minWidth={"50%"} width={"50%"} pl={10} textAlign={"righ"}>
+      <Box
+        minWidth={{ md: "50%", xs: "100%" }}
+        px={{ xs: 0, md: 10 }}
+        textAlign={{ xs: "center", md: "right" }}
+      >
         <img src={part} alt="consult" width={"80%"} />
       </Box>
     </Box>

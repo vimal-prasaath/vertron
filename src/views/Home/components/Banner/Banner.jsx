@@ -8,22 +8,22 @@ const Banner = () => {
     <>
       <BannerContainer
         image={banner}
-        px={10}
+        px={{ md: 10, xs: 4 }}
         display="flex"
         justifyContent="center"
         flexDirection="column"
       >
         <Typography
-          fontSize="3.125rem"
+          fontSize={{ xs: "2.5rem", md: "3.125rem" }}
           fontWeight={600}
-          width="45%"
+          width={{ xs: "100%", md: "45%" }}
           color={"#fff"}
           textTransform={"uppercase"}
         >
           Service Centre Exclusively for Luxury Cars
         </Typography>
         <Typography
-          fontSize="2.5rem"
+          fontSize={{ xs: "2.25rem", md: "2.5rem" }}
           fontWeight={600}
           color={"#fff"}
           textTransform={"uppercase"}
@@ -35,7 +35,7 @@ const Banner = () => {
           <Button variant="contained">Get In touch</Button>
         </Box>
       </BannerContainer>
-      <img src={brandLogos} width={"100%"} />
+      <img src={brandLogos} alt="brandLogos" width={"100%"} />
     </>
   );
 };

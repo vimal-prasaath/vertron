@@ -67,7 +67,7 @@ const MinizedBlogs = () => {
 
 const BlogDetails = () => {
   return (
-    <Box width={"100%"}>
+    <Box width={"100%"} mb={3}>
       <img src={blogImg} alt="blog" width={"100%"} />
       <Typography
         color={"#555"}
@@ -85,7 +85,7 @@ const BlogDetails = () => {
         November 20, 2020 — Vertron
       </Typography>
       <Typography
-        fontSize={"2.5rem"}
+        fontSize={{ md: "2.5rem", xs: "2rem" }}
         fontWeight={600}
         py={2}
         borderBottom={1}
@@ -124,11 +124,24 @@ const BlogDetails = () => {
 
 const BlogContent = () => {
   return (
-    <Box display={"flex"} px={10} py={6}>
-      <Box pr={3} flexGrow={1}>
+    <Box
+      display={"flex"}
+      flexWrap={"wrap"}
+      px={{ xs: 4, md: 10 }}
+      py={{ xs: 4, md: 6 }}
+    >
+      <Box
+        pr={3}
+        flexGrow={1}
+        minWidth={{ xs: "100%", md: "73rem" }}
+        width={{ xs: "100%", md: "73rem" }}
+      >
         <BlogDetails />
       </Box>
-      <Box minWidth={"27rem"} width={"27rem"}>
+      <Box
+        minWidth={{ xs: "100%", md: "27rem" }}
+        width={{ xs: "100%", md: "27rem" }}
+      >
         <MinizedBlogs />
         <BookAppointmentCard />
       </Box>
