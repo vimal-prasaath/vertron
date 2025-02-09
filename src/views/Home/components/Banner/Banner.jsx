@@ -1,7 +1,8 @@
 import { BannerContainer } from "./Banner.styles";
 import { Box, Button, Typography } from "@mui/material";
 import banner from "assets/images/icons/home.png";
-import brandLogos from "assets/images/icons/brand-logo.png";
+// import brandLogos from "assets/images/icons/brand-logo.png";
+import Logos from "./Logos";
 
 const Banner = () => {
   return (
@@ -38,7 +39,8 @@ const Banner = () => {
           </Button>
         </Box>
       </BannerContainer>
-      <img src={brandLogos} alt="brandLogos" width={"100%"} />
+      {/* <img src={brandLogos} alt="brandLogos" width={"100%"} /> */}
+      <Logos />
     </>
   );
 };
