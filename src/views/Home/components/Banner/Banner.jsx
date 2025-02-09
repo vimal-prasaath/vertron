@@ -16,11 +16,11 @@ const Banner = () => {
         <Typography
           fontSize={{ xs: "2.5rem", md: "3.125rem" }}
           fontWeight={600}
-          width={{ xs: "100%", md: "45%" }}
+          width={{ xs: "100%", md: "50%" }}
           color={"#fff"}
           textTransform={"uppercase"}
         >
-          Service Centre Exclusively for Luxury Cars
+          Chennai’s only Exclusive Service Centre for Luxury Cars
         </Typography>
         <Typography
           fontSize={{ xs: "2.25rem", md: "2.5rem" }}
@@ -29,7 +29,7 @@ const Banner = () => {
           textTransform={"uppercase"}
           my={2}
         >
-          Car Care Where Precision Meets Pampering
+          Your Car Repair Specialists
         </Typography>
         <Box my={2}>
           <Button variant="contained">Get In touch</Button>
