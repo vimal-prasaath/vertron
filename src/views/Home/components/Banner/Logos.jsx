@@ -4,7 +4,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { Box } from "@mui/material";
 
-import i1 from "assets/images/cars/aston-martin-1.svg";
+import i13 from "assets/images/cars/aston-martin-1.svg";
 import i2 from "assets/images/cars/audi-11.svg";
 import i3 from "assets/images/cars/bentley.svg";
 import i4 from "assets/images/cars/bmw-2.svg";
@@ -16,7 +16,7 @@ import i9 from "assets/images/cars/ford-8.svg";
 import i10 from "assets/images/cars/jaguar-cars.svg";
 import i11 from "assets/images/cars/jeep-7.svg";
 import i12 from "assets/images/cars/kia.svg";
-import i13 from "assets/images/cars/lamborghini.svg";
+import i1 from "assets/images/cars/lamborghini.svg";
 import i14 from "assets/images/cars/lexus-2.svg";
 import i15 from "assets/images/cars/mercedes-benz-9.svg";
 import i16 from "assets/images/cars/mitsubishi.svg";
