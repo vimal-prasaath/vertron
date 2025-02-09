@@ -7,7 +7,7 @@ const TestimonialWrapper = () => {
       <Typography
         fontSize={{ xs: "2rem", md: "2.5rem" }}
         fontWeight={600}
-        mb={4}
+        mb={8}
         textAlign={{ xs: "center", md: "left" }}
       >
         TESTIMONIALS
@@ -16,7 +16,7 @@ const TestimonialWrapper = () => {
         <Box
           width={{ md: "50%", xs: "100%" }}
           pr={{ xs: 0, md: 4 }}
-          mb={{ xs: 3, md: 0 }}
+          mb={{ xs: 6, md: 0 }}
         >
           <Testimonial />
         </Box>

@@ -20,7 +20,7 @@ const baseTheme = createTheme({
       html {
         font-size: 11px;
       }
-        @media screen and (min-width: 1280px) {
+        @media screen and (min-width: 1366px) {
           html {
         font-size: 12px;
       }

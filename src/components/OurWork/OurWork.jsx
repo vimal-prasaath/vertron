@@ -12,6 +12,7 @@ const OurWork = () => {
         fontWeight={600}
         mb={4}
         textAlign={{ xs: "center", md: "left" }}
+        textTransform={"uppercase"}
       >
         Our Work in Pictures
       </Typography>

@@ -9,6 +9,7 @@ const Banner = () => {
       <BannerContainer
         image={banner}
         px={{ md: 10, xs: 4 }}
+        pt={{ md: 4, xs: 0 }}
         display="flex"
         justifyContent="center"
         flexDirection="column"
@@ -32,7 +33,9 @@ const Banner = () => {
           Your Car Repair Specialists
         </Typography>
         <Box my={2}>
-          <Button variant="contained">Get In touch</Button>
+          <Button variant="contained" sx={{ minHeight: "2.5rem" }}>
+            Get In touch
+          </Button>
         </Box>
       </BannerContainer>
       <img src={brandLogos} alt="brandLogos" width={"100%"} />

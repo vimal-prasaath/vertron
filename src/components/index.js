@@ -7,3 +7,4 @@ export { default as Blog } from "./Blog";
 export { default as BookAppointment } from "./BookAppointment";
 export { default as BookAppointmentCard } from "./BookAppointmentCard";
 export { default as OurWork } from "./OurWork";
+export { default as NeedHelp } from "./NeedHelp";

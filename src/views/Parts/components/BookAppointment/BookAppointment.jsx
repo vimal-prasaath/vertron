@@ -185,7 +185,10 @@ const BookAppointment = () => {
               </Grid>
             </Grid>
             <Box textAlign={"center"} mt={2}>
-              <Button variant="contained" sx={{ minWidth: "12rem" }}>
+              <Button
+                variant="contained"
+                sx={{ minWidth: "12rem", minHeight: "2.5rem" }}
+              >
                 Submit
               </Button>
             </Box>

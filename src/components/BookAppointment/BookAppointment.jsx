@@ -2,11 +2,14 @@ import { Box, Typography, Link, Grid, TextField, Button } from "@mui/material";
 import bookappointment from "assets/images/icons/book-app.png";
 import { Link as RouterLink } from "react-router-dom";
 import watsapp from "assets/images/icons/watsapp.png";
+import Checkbox from "@mui/material/Checkbox";
+import FormControlLabel from "@mui/material/FormControlLabel";
+import CropSquareIcon from "@mui/icons-material/CropSquare";
 
 const BookAppointment = () => {
   return (
     <Box
-      minHeight={"50rem"}
+      minHeight={"40rem"}
       px={{ xs: 4, md: 10 }}
       py={{ xs: 4, md: 6 }}
       color={"white"}
@@ -77,10 +80,16 @@ const BookAppointment = () => {
           border={1}
           borderColor={"#fff"}
           borderRadius={"1rem"}
-          p={4}
+          px={4}
+          py={8}
           bgcolor={"#ffffff3d"}
         >
-          <Typography color={"white"} fontSize={"2.5rem"} fontWeight={"bold"}>
+          <Typography
+            color={"white"}
+            fontSize={"2.5rem"}
+            fontWeight={"bold"}
+            mb={1}
+          >
             Book An Appointment
           </Typography>
 
@@ -163,11 +172,21 @@ const BookAppointment = () => {
                 />
               </Grid>
             </Grid>
-            <Typography py={2}>
-              I agree to Vertron Privacy Policy & Terms of Use.
+            <Typography py={3}>
+              <FormControlLabel
+                control={
+                  <Checkbox
+                    icon={<CropSquareIcon sx={{ color: "common.white" }} />}
+                  />
+                }
+                label="I agree to Vertron Privacy Policy & Terms of Use."
+              />
             </Typography>
             <Box textAlign={"center"}>
-              <Button variant="contained" sx={{ minWidth: "12rem" }}>
+              <Button
+                variant="contained"
+                sx={{ minWidth: "12rem", minHeight: "2.5rem" }}
+              >
                 Submit
               </Button>
             </Box>

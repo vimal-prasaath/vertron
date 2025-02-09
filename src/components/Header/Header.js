@@ -6,6 +6,13 @@ import MenuIcon from "@mui/icons-material/Menu";
 import CloseRoundedIcon from "@mui/icons-material/CloseRounded";
 import watsapp from "assets/images/icons/watsapp.png";
 import logo from "assets/images/icons/logo.png";
+import MailOutlineIcon from "@mui/icons-material/MailOutline";
+import AccessTimeIcon from "@mui/icons-material/AccessTime";
+import LocationOnOutlinedIcon from "@mui/icons-material/LocationOnOutlined";
+
+import YouTubeIcon from "@mui/icons-material/YouTube";
+import FacebookRoundedIcon from "@mui/icons-material/FacebookRounded";
+import InstagramIcon from "@mui/icons-material/Instagram";
 
 const Header = () => {
   const [openDrawer, setOpenDrawer] = React.useState(false);
@@ -15,15 +22,106 @@ const Header = () => {
   };
   return (
     <Box position={"sticky"} top={0} zIndex={1000}>
-      <Box bgcolor="common.black">
-        <Typography
-          color="common.white"
-          p={1.25}
-          textAlign="center"
-          variant="body1"
+      <Box
+        bgcolor="common.black"
+        display={"flex"}
+        flexWrap={"wrap"}
+        justifyContent={"space-between"}
+        px={{ xs: 2, md: 10 }}
+        py={1.5}
+      >
+        <Box
+          display={"flex"}
+          flexWrap={"wrap"}
+          justifyContent={{ xs: "center", md: "start" }}
         >
-          D-9, 4th St, Ambattur Industrial Estate, Chennai, Tamil Nadu 600058
-        </Typography>
+          <Typography pr={3} mb={{ xs: 1, md: 0 }}>
+            <Link
+              component={RouterLink}
+              to={`mailto:info@vertronmotor.com`}
+              sx={{ textDecoration: "none" }}
+              color={"common.white"}
+              display={"flex"}
+              alignItems={"center"}
+              fontSize={"1rem"}
+            >
+              <MailOutlineIcon />
+              <Typography component="span" variant="body1" ml={1}>
+                info@vertronmotor.com
+              </Typography>
+            </Link>
+          </Typography>
+          <Typography
+            color={"common.white"}
+            display={"flex"}
+            alignItems={"center"}
+            fontSize={"1rem"}
+            pr={3}
+            mb={{ xs: 1, md: 0 }}
+          >
+            <AccessTimeIcon />
+            <Typography component="span" variant="body1" ml={1}>
+              06:00 AM - 09:00 PM
+            </Typography>
+          </Typography>
+          <Typography
+            color="common.white"
+            // textAlign="center"
+            variant="body1"
+            display={"flex"}
+            alignItems={"center"}
+            fontSize={"1rem"}
+            mb={{ xs: 1, md: 0 }}
+          >
+            <LocationOnOutlinedIcon />
+            <Typography component="span" variant="body1" ml={1}>
+              D-9, 4th St, Ambattur Industrial Estate, Chennai, Tamil Nadu
+              600058
+            </Typography>
+          </Typography>
+        </Box>
+        <Box
+          display={"flex"}
+          justifyContent={{ xs: "center", md: "start" }}
+          flexGrow={{ xs: 1, md: 0 }}
+        >
+          <Link
+            component={RouterLink}
+            to={`/`}
+            sx={{ textDecoration: "none" }}
+            color={"common.white"}
+            display={"flex"}
+            alignItems={"center"}
+            fontSize={"1rem"}
+            mr={2}
+          >
+            <YouTubeIcon />
+          </Link>
+          <Link
+            component={RouterLink}
+            to={`/`}
+            sx={{ textDecoration: "none" }}
+            color={"common.white"}
+            display={"flex"}
+            alignItems={"center"}
+            fontSize={"1rem"}
+            mr={2}
+          >
+            <FacebookRoundedIcon />
+          </Link>
+          <Link
+            component={RouterLink}
+            to={"/"}
+            sx={{ textDecoration: "none" }}
+            color={"common.white"}
+            display={"flex"}
+            alignItems={"center"}
+            fontSize={"1rem"}
+            mr={2}
+          >
+            <InstagramIcon />
+          </Link>
+        </Box>
       </Box>
       <Box
         borderBottom={1}
@@ -71,7 +169,7 @@ const Header = () => {
             sx={{ textDecoration: "none" }}
             color={"common.black"}
           >
-            <Typography component="span" mr={3.5}>
+            <Typography component="span" mr={5.5} variant="body2">
               Home
             </Typography>
           </Link>
@@ -81,7 +179,7 @@ const Header = () => {
             sx={{ textDecoration: "none" }}
             color={"common.black"}
           >
-            <Typography component="span" mr={3.5}>
+            <Typography component="span" mr={5.5} variant="body2">
               About Us
             </Typography>
           </Link>
@@ -91,7 +189,7 @@ const Header = () => {
             sx={{ textDecoration: "none" }}
             color={"common.black"}
           >
-            <Typography component="span" mr={3.5}>
+            <Typography component="span" mr={5.5} variant="body2">
               Services
             </Typography>
           </Link>
@@ -101,7 +199,7 @@ const Header = () => {
             sx={{ textDecoration: "none" }}
             color={"common.black"}
           >
-            <Typography component="span" mr={3.5}>
+            <Typography component="span" mr={5.5} variant="body2">
               Parts
             </Typography>
           </Link>
@@ -111,7 +209,7 @@ const Header = () => {
             sx={{ textDecoration: "none" }}
             color={"common.black"}
           >
-            <Typography component="span" mr={3.5}>
+            <Typography component="span" mr={5.5} variant="body2">
               Blog
             </Typography>
           </Link>
@@ -121,7 +219,7 @@ const Header = () => {
             sx={{ textDecoration: "none" }}
             color={"common.black"}
           >
-            <Typography component="span" mr={3.5}>
+            <Typography component="span" mr={5.5} variant="body2">
               Contact Us
             </Typography>
           </Link>
@@ -148,7 +246,7 @@ const Header = () => {
                 },
               })}
             >
-              <Typography variant="subtitle2">Whatsapp</Typography>
+              <Typography variant="subtitle2">Need Help</Typography>
               <Typography variant="subtitle2" fontWeight="bold">
                 +91-89398 54430
               </Typography>

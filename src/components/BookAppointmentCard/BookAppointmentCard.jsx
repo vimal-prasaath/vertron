@@ -99,7 +99,10 @@ const BookAppointmentCard = () => {
         I agree to Vertron Privacy Policy & Terms of Use.
       </Typography>
       <Box textAlign={"center"}>
-        <Button variant="contained" sx={{ width: "100%" }}>
+        <Button
+          variant="contained"
+          sx={{ minHeight: "3.125rem", width: "100%" }}
+        >
           Submit
         </Button>
       </Box>

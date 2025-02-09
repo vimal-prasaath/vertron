@@ -133,7 +133,10 @@ const ContactForm = () => {
             </Grid>
           </Grid>
           <Box mt={3}>
-            <Button variant="contained" sx={{ minWidth: "12rem" }}>
+            <Button
+              variant="contained"
+              sx={{ minWidth: "12rem", minHeight: "2.5rem" }}
+            >
               Submit
             </Button>
           </Box>

@@ -47,7 +47,9 @@ const Footer = () => {
               }}
               sx={{ borderRadius: "10px", minWidth: "20rem", mr: 2 }}
             />
-            <Button variant="contained">SUBSCRIBE</Button>
+            <Button variant="contained" sx={{ minHeight: "2.5rem" }}>
+              SUBSCRIBE
+            </Button>
           </Box>
         </Box>
         <Box>

@@ -42,14 +42,21 @@ const AutoServiceCard = ({ title, description, img }) => {
         textAlign={{ xs: "center", md: "left" }}
       >
         <img src={img} alt="service" width="80" />
-        <Typography fontSize={"1.5rem"} my={2}>
+        <Typography
+          fontSize={"1.5rem"}
+          my={2}
+          fontWeight={700}
+          textTransform={"uppercase"}
+        >
           {title}
         </Typography>
         <Typography fontSize={"1.25rem"} my={2}>
           {description}
         </Typography>
         <Typography mb={2}>Know More</Typography>
-        <Button variant="contained">Book Now</Button>
+        <Button variant="contained" sx={{ minHeight: "2.5rem" }}>
+          Book Now
+        </Button>
       </Box>
     </Box>
   );

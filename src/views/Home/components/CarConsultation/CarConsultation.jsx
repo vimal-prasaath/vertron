@@ -1,5 +1,6 @@
 import { Box, Typography, Button } from "@mui/material";
 import consult from "assets/images/icons/car-consult.png";
+import { NeedHelp } from "components";
 
 const CarConsultation = () => {
   return (
@@ -28,12 +29,13 @@ const CarConsultation = () => {
           fontSize={{ xs: "2rem", md: "2.5rem" }}
           fontWeight={600}
           textAlign={{ xs: "center", md: "left" }}
+          textTransform={"uppercase"}
         >
           Expert Car Consultation - Ask Anything for FREE
         </Typography>
         <Typography
           fontSize={"1.5rem"}
-          my={2}
+          my={3}
           fontWeight={600}
           // textAlign={{ xs: "center", md: "left" }}
         >
@@ -46,8 +48,11 @@ const CarConsultation = () => {
           informed decisions.
         </Typography>
         <Typography mb={2}>KNOW MORE</Typography>
-        <Box textAlign={{ xs: "center", md: "left" }}>
-          <Button variant="contained">Get In touch</Button>
+        <Box textAlign={{ xs: "center", md: "left" }} display={"flex"}>
+          <Button variant="contained" sx={{ minHeight: "2.5rem", mr: 3 }}>
+            Get In touch
+          </Button>
+          <NeedHelp />
         </Box>
       </Box>
     </Box>

@@ -15,16 +15,22 @@ const CartPart = () => {
       <Box
         width={{ md: "50%", xs: "100%" }}
         minWidth={{ md: "50%", xs: "100%" }}
-        px={{ xs: 0, md: 10 }}
+        pr={{ xs: 0, md: 10 }}
       >
         <Typography
           fontSize={{ xs: "2rem", md: "2.5rem" }}
           fontWeight={600}
           textAlign={{ xs: "center", md: "left" }}
+          textTransform={"uppercase"}
         >
           Looking for a Rare Luxury Car Part?
         </Typography>
-        <Typography fontSize={"1.5rem"} my={2} fontWeight={600}>
+        <Typography
+          fontSize={"1.5rem"}
+          my={3}
+          fontWeight={600}
+          textTransform={"uppercase"}
+        >
           We Understand - Your Car Is Your Baby
         </Typography>
         <Typography fontSize={"1.25rem"} my={2}>
@@ -34,7 +40,9 @@ const CartPart = () => {
         </Typography>
         <Typography mb={2}>KNOW MORE</Typography>
         <Box textAlign={{ xs: "center", md: "left" }}>
-          <Button variant="contained">Get In touch</Button>
+          <Button variant="contained" sx={{ minHeight: "2.5rem" }}>
+            Get In touch
+          </Button>
         </Box>
       </Box>
       <Box

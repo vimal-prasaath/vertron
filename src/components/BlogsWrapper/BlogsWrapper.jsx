@@ -24,7 +24,9 @@ const BlogsWrapper = () => {
         </Box>
       </Box>
       <Box pt={4} textAlign={"center"}>
-        <Button variant="contained">View ALL</Button>
+        <Button variant="contained" sx={{ minHeight: "2.5rem" }}>
+          View ALL
+        </Button>
       </Box>
     </Box>
   );

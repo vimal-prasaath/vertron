@@ -14,7 +14,9 @@ const Process = () => {
           unparalleled care and attention:
         </Typography>
         <Box display="flex" alignItems={"center"} my={4}>
-          <Button variant="contained">GET IN TOUCH</Button>
+          <Button variant="contained" sx={{ minHeight: "2.5rem" }}>
+            GET IN TOUCH
+          </Button>
 
           <Link
             to="https://wa.me/918939854430"
