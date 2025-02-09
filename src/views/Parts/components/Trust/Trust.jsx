@@ -26,10 +26,14 @@ const Trust = () => {
         >
           We Source Genuine Car Parts  from Across the Globe
         </Typography>
-        <Typography fontSize={{ xs: "1.75rem", md: "2.25rem" }} my={2}>
+        <Typography fontSize={{ xs: "1.75rem", md: "2.125rem" }} my={2}>
           Doesn’t Matter If It Is Too Small Or Too Big To Be Shipped
         </Typography>
-        <Typography fontSize={"1.25rem"} my={2}>
+        <Typography
+          fontSize={"1.25rem"}
+          letterSpacing={{ xs: 0, md: "0.75px" }}
+          my={2}
+        >
           Exclusive Luxury Car Parts are Rare - But Not Anymore! From Europe to
           America and beyond, our global sourcing network enables us to procure
           original luxury car parts from various regions worldwide. Whether it's

@@ -23,10 +23,15 @@ const Engine = () => {
           fontWeight={600}
           textAlign={{ xs: "center", md: "left" }}
           textTransform={"uppercase"}
+          letterSpacing={{ md: "0.75px", sx: 0 }}
         >
           Roaring Engines Captivate Us & Smell of Interior Leathers Energize us
         </Typography>
-        <Typography fontSize={"1.25rem"} my={2}>
+        <Typography
+          fontSize={"1.25rem"}
+          my={2}
+          letterSpacing={{ md: "0.75px", sx: 0 }}
+        >
           As luxury cars are our world, our passion reflects in our work.  Book
           now for personalised car care solutions tailored to your needs and
           experience peace of mind and exceptional service.
@@ -37,7 +42,7 @@ const Engine = () => {
           justifyContent={{ xs: "center", md: "flex-start" }}
           my={4}
         >
-          <Button variant="contained" sx={{ minHeight: "2.5rem" }}>
+          <Button variant="contained" sx={{ minHeight: "3.125rem" }}>
             GET IN TOUCH
           </Button>
 

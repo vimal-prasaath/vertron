@@ -68,7 +68,19 @@ const MinizedBlogs = () => {
 const BlogDetails = () => {
   return (
     <Box width={"100%"} mb={3}>
-      <img src={blogImg} alt="blog" width={"100%"} />
+      <Box
+        height={{ xs: "auto", md: "40rem" }}
+        borderRadius={"1rem"}
+        overflow={"hidden"}
+      >
+        <img
+          src={blogImg}
+          alt="blog"
+          width={"100%"}
+          height={"100%"}
+          style={{ objectFit: "cover" }}
+        />
+      </Box>
       <Typography
         color={"#555"}
         fontSize={"1.125rem"}
@@ -94,7 +106,12 @@ const BlogDetails = () => {
         Lorem IPSUM IS a dummy text
       </Typography>
 
-      <Typography color={"#555"} fontSize={"1.125rem"} py={2}>
+      <Typography
+        color={"#555"}
+        fontSize={"1.125rem"}
+        py={2}
+        letterSpacing={{ md: "0.5px", sx: "0" }}
+      >
         Korem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis
         molestie, dictum est a, mattis tellus. Sed dignissim, metus nec
         fringilla accumsan Jorem ipsum dolor sit amet, consectetur adipiscing
@@ -105,7 +122,12 @@ const BlogDetails = () => {
         conubia nostra, per inceptos himenaeos. Praesent auctor purus luctus
         enim egestas, ac scelerisque ante pulvinar. Donec ut rhoncus ex.
       </Typography>
-      <Typography color={"#555"} fontSize={"1.125rem"} py={2}>
+      <Typography
+        color={"#555"}
+        fontSize={"1.125rem"}
+        py={2}
+        letterSpacing={{ md: "0.5px", sx: "0" }}
+      >
         Korem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis
         molestie, dictum est a, mattis tellus. Sed dignissim, metus nec
         fringilla accumsan Jorem ipsum dolor sit amet, consectetur adipiscing
@@ -131,16 +153,16 @@ const BlogContent = () => {
       py={{ xs: 4, md: 6 }}
     >
       <Box
-        pr={3}
+        pr={5}
         flexGrow={1}
-        minWidth={{ xs: "100%", md: "73rem" }}
-        width={{ xs: "100%", md: "73rem" }}
+        minWidth={{ xs: "100%", md: "71rem" }}
+        width={{ xs: "100%", md: "71rem" }}
       >
         <BlogDetails />
       </Box>
       <Box
-        minWidth={{ xs: "100%", md: "27rem" }}
-        width={{ xs: "100%", md: "27rem" }}
+        minWidth={{ xs: "100%", md: "29rem" }}
+        width={{ xs: "100%", md: "29rem" }}
       >
         <MinizedBlogs />
         <BookAppointmentCard />

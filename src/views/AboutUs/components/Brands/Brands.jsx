@@ -9,6 +9,7 @@ const Brands = () => {
         fontWeight={"bold"}
         mb={4}
         textAlign={{ xs: "center", md: "left" }}
+        textTransform={"uppercase"}
       >
         Brands we serve
       </Typography>

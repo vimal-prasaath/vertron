@@ -48,7 +48,11 @@ const CarConsultation = () => {
           informed decisions.
         </Typography>
         <Typography mb={2}>KNOW MORE</Typography>
-        <Box textAlign={{ xs: "center", md: "left" }} display={"flex"}>
+        <Box
+          justifyContent={{ xs: "center", md: "start" }}
+          display={"flex"}
+          alignItems={"center"}
+        >
           <Button variant="contained" sx={{ minHeight: "2.5rem", mr: 3 }}>
             Get In touch
           </Button>

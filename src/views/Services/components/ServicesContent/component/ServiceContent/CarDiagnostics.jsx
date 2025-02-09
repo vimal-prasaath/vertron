@@ -5,7 +5,7 @@ const CarDiagnostics = () => {
   return (
     <Box>
       <Typography
-        fontSize={{ xs: "2rem", md: "3rem" }}
+        fontSize={{ xs: "2rem", md: "2.5rem" }}
         fontWeight={600}
         textTransform={"uppercase"}
         mt={{ xs: 3, md: 0 }}
@@ -20,8 +20,8 @@ const CarDiagnostics = () => {
       >
         No Problem Is Too Complex for Us
       </Typography>
-      <Box fontSize={"1.5rem"} color="#555555">
-        <Typography fontSize={"1.5rem"} lineHeight={1.75}>
+      <Box fontSize={"1.25rem"} color="#555555">
+        <Typography fontSize={"1.25rem"} lineHeight={1.75}>
           From mysterious electrical faults to sudden power loss and stalling,
           Vertron specializes in solving even the most elusive issues in
           European vehicles. Our comprehensive diagnostic process leaves no
@@ -29,20 +29,26 @@ const CarDiagnostics = () => {
           accurately. Whether it’s an odd noise or a no-start problem, we get to
           the bottom of it, saving you time and hassle.
         </Typography>
-        <Box py={3}>
-          <img src={maintaince} alt="maintaince" width={"100%"} />
+        <Box py={3} height={{ md: "35rem", xs: "auto" }}>
+          <img
+            src={maintaince}
+            alt="maintaince"
+            width={"100%"}
+            height={"100%"}
+            style={{ objectFit: "cover" }}
+          />
         </Box>
       </Box>
       <Typography
-        fontSize={{ xs: "1.75rem", md: "3rem" }}
+        fontSize={{ xs: "1.75rem", md: "2rem" }}
         my={2}
         fontWeight={600}
         textTransform={"uppercase"}
       >
         Collaborative Diagnosis – A Unique Team Approach
       </Typography>
-      <Box fontSize={"1.5rem"} color="#555555">
-        <Typography fontSize={"1.5rem"} lineHeight={1.75}>
+      <Box fontSize={"1.25rem"} color="#555555">
+        <Typography fontSize={"1.25rem"} lineHeight={1.75}>
           At Vertron, our team doesn’t work in silos. We bring together experts
           for a collaborative huddle where we discuss your vehicle’s symptoms
           and explore every possible cause. By separating primary symptoms from
@@ -50,18 +56,24 @@ const CarDiagnostics = () => {
           our diagnosis is pinpoint accurate and targeted at the real issue.
         </Typography>
       </Box>
-      <Box py={3}>
-        <img src={maintaince} alt="maintaince" width={"100%"} />
+      <Box py={3} height={{ md: "35rem", xs: "auto" }}>
+        <img
+          src={maintaince}
+          alt="maintaince"
+          width={"100%"}
+          height={"100%"}
+          style={{ objectFit: "cover" }}
+        />
       </Box>
       <Typography
-        fontSize={{ xs: "1.75rem", md: "3rem" }}
+        fontSize={{ xs: "1.75rem", md: "2rem" }}
         my={2}
         fontWeight={600}
         textTransform={"uppercase"}
       >
         Transparent Process – You’re in Control of the Fix
       </Typography>
-      <Typography fontSize={"1.5rem"} color="#555555" lineHeight={1.75}>
+      <Typography fontSize={"1.25rem"} color="#555555" lineHeight={1.75}>
         Once the root problem is identified, we not only provide a detailed
         resolution plan but also handle the repair with high-quality parts.
         After the repair, we rigorously test your vehicle to make sure

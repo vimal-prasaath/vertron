@@ -21,7 +21,7 @@ const ServiceList = ({ view, setView }) => {
         pb={2}
         borderColor="#e8e8e8"
         fontWeight={600}
-        fontSize={{ xs: "2rem", md: "3rem" }}
+        fontSize={{ xs: "2rem", md: "2.5rem" }}
       >
         SERVICE LIST
       </Typography>

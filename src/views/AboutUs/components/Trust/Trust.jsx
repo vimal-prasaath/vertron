@@ -24,12 +24,24 @@ const Trust = () => {
         >
           VERTRON SYMBOLIZES TRUST
         </Typography>
-        <Typography fontSize={"1.25rem"} my={2}>
+        <Typography
+          fontSize={"1.25rem"}
+          my={2}
+          color={"#555"}
+          letterSpacing={{ sx: "0", md: "0.75px" }}
+          lineHeight={1.75}
+        >
           At Vertron, we embody trust - quite literally, as "Vertron" is derived
           from the German word for trust. Our commitment to excellence goes
           beyond mere business; it's a passion-driven journey.
         </Typography>
-        <Typography fontSize={"1.25rem"} my={2}>
+        <Typography
+          fontSize={"1.25rem"}
+          my={2}
+          color={"#555"}
+          letterSpacing={{ sx: "0", md: "0.75px" }}
+          lineHeight={1.75}
+        >
           Just as you cherish your luxury vehicle, we treat each car as our own,
           with meticulous care and attention to detail. With Vertron, you're not
           just a client; you're part of our trusted family, where every service
